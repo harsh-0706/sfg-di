@@ -1,19 +1,18 @@
 package code.harsh.sfgdi.controllers;
 
-import code.harsh.sfgdi.controllers.PropertyGeneratedController;
 import code.harsh.sfgdi.services.GreetingServiceImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class PropertyGeneratedControllerTest {
+class PropertyInjectedControllerTest {
 
-    PropertyGeneratedController controller;
+    PropertyInjectedController controller;
 
     @BeforeEach
     void setUp() {
-        controller = new PropertyGeneratedController();
+        controller = new PropertyInjectedController();
         controller.greetingService = new GreetingServiceImpl();
     }
 
