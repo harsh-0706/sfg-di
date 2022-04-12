@@ -1,11 +1,9 @@
 package code.harsh.sfgdi.controllers;
 
-import code.harsh.sfgdi.services.GreetingServiceImpl;
+import code.harsh.sfgdi.services.ConstructorGreetingService;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.*;
 
 class ConstructorInjectedControllerTest {
 
@@ -14,7 +12,7 @@ class ConstructorInjectedControllerTest {
     @BeforeEach
     void setUp() {
 
-        controller = new ConstructorInjectedController(new GreetingServiceImpl());
+        controller = new ConstructorInjectedController(new ConstructorGreetingService());
     }
 
     @AfterEach
